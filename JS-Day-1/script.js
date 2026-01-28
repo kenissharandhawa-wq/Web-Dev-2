@@ -1,46 +1,27 @@
-// let fruits = ["apple", "banana"];
-// let newlength = fruits.push("cherry");
-// console.log(fruits);
-// console.log(newlength);
+// TDZ: When we declare the variable with let and const without its proper initialization then the variable lies in temporal dead zone until its proper initialization.
 
-// //Q1 reverse the array using push and pop method.
+// Q1.
+// let marks = [32,11,7,24,19,35,10,0,15,17];
+// let res = marks.filter((x)=>{
+//     if (x>=16){
+//         console.log(x, "pass")
+//     }
+//     else{
+//         console.log(x, "fail")
+//     }
+// });
+
+//Q2. Find the sum of all elements inside an array with a loop.
+
 // let arr = [1,2,3,4,5]
-// let rev = []
-// while(arr.length>0){
-//     rev.push(arr.pop())
+// let sum = 0;
+// for(let i=0; i<arr.length; i++){
+//     sum = sum+arr[i];
 // }
-// console.log(rev)
+// console.log(sum)
 
-// //Q2. Remove all negative integers 
-// let arr = [10, -12, 3, -24, 45, -6]
-// let nev = []
-// while(arr.length>0){
-//     let val = arr.shift();
-//     if(val>0){
-//         nev.push(val);
-//     }
-// }
-// console.log(nev)
+// using reduce method
+//let arr = [1,2,3,4,5]
 
-// //Q3 check if palindrome or not
-// function palindrome(){
-// let arr = [1,2,4,2,1];
-// let original = []
-// let reverse = []
-
-// for(let i = 0; i<arr.length; i++) {
-//     original.push(arr[i]);
-// }
-
-// while(arr.length>0){
-//     reverse.push(arr.pop())
-// }
-
-// for(i=0;i<original.length;i++){
-//     if(original[i] !== reverse[i]){
-//         return "not a palindrome"
-//     }
-//     return "palindrome"
-// }
-// }
-// console.log(palindrome())
+//let res = arr.reduce((acc,current)=>acc+current)
+//console.log(res);
